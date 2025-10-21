@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎨 ローカル画像 → 絵文字色情報JSON生成ツール</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body { background: #111; color: #eee; font-family: sans-serif; }
+textarea { width: 100%; min-height: 12rem; font-family: monospace; }
+</style>
+</head>
+<body class="p-4">
+<h1 class="text-2xl font-bold mb-3">🎨 ローカル画像 → 絵文字色情報JSON生成</h1>
+
+<div class="mb-3">
+  <label class="block mb-1">画像ファイルを選択（複数可）</label>
+  <input id="imgFiles" type="file" accept="image/*" multiple class="text-white">
+</div>
+
+<button id="generate" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded">平均色を計算</button>
+
+<p id="status" class="my-3 text-gray-400"></p>
+<textarea id="output" readonly></textarea>
+
+<script>
+async function getAverageColor(file) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => {
+      const canvas = document.createElement("canvas");
+      const ctx = canvas.getContext("2d");
+      canvas.width = img.width;
+      canvas.height = img.height;
+      ctx.drawImage(img, 0, 0);
+      const data = ctx.getImageData(0, 0, img.width, img.height).data;
+      let r = 0, g = 0, b = 0, count = 0;
+      for (let i = 0; i < data.length; i += 4) {
+        if (data[i + 3] > 100) { // 透明度フィルタ
+          r += data[i];
+          g += data[i + 1];
+          b += data[i + 2];
+          count++;
+        }
+      }
+      resolve(count ? [r / count, g / count, b / count] : [128,128,128]);
+    };
+    img.onerror = () => resolve([128,128,128]);
+    img.src = URL.createObjectURL(file);
+  });
+}
+
+document.getElementById("generate").addEventListener("click", async ()=>{
+  const files = document.getElementById("imgFiles").files;
+  if(!files.length){ alert("画像を選択してください。"); return; }
+
+  const result = [];
+  let i = 0;
+  for(const file of files){
+    i++;
+    const name = file.name.replace(/\.[^/.]+$/, ""); // 拡張子除去
+    document.getElementById("status").textContent = `${i}/${files.length} 処理中: ${name}`;
+    const color = await getAverageColor(file);
+    result.push({ name: `:${name}:`, color: color.map(v=>Math.round(v)) });
+  }
+
+  const json = JSON.stringify(result, null, 2);
+  document.getElementById("output").value = json;
+  document.getElementById("status").textContent = `✅ 完了！ ${result.length}件生成。 下のテキストを "emojis.json" として保存してください。`;
+});
+</script>
+</body>
+</html>

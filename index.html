@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Misskey絵文字モザイクメーカー</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="p-4 text-center">
+<h1 class="text-2xl font-bold mb-2">🧩 Misskey絵文字モザイクメーカー</h1>
+<p class="text-gray-400 mb-3">画像をアップロード → Misskey投稿用モザイクを生成（自動で絵文字データ読込）</p>
+
+<input type="file" id="imgInput" accept="image/*" class="mb-3">
+<button id="generate" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded">生成</button>
+
+<p id="status" class="my-3 text-gray-400"></p>
+<canvas id="canvas" class="my-3 max-w-full"></canvas>
+<div class="relative">
+  <textarea id="output" readonly></textarea>
+  <button id="copyBtn" class="absolute top-2 right-2 bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded text-sm" style="display:none;">コピー</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

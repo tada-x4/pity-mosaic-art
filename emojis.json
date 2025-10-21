@@ -1,0 +1,1378 @@
+[
+  {
+    "name": ":pity_aichan:",
+    "color": [
+      179,
+      161,
+      137
+    ]
+  },
+  {
+    "name": ":pity_akane:",
+    "color": [
+      200,
+      157,
+      150
+    ]
+  },
+  {
+    "name": ":pity_akari:",
+    "color": [
+      189,
+      182,
+      170
+    ]
+  },
+  {
+    "name": ":pity_akari_moe:",
+    "color": [
+      194,
+      190,
+      181
+    ]
+  },
+  {
+    "name": ":pity_akari_tubomi:",
+    "color": [
+      189,
+      182,
+      174
+    ]
+  },
+  {
+    "name": ":pity_akashi:",
+    "color": [
+      175,
+      104,
+      94
+    ]
+  },
+  {
+    "name": ":pity_allial:",
+    "color": [
+      175,
+      172,
+      166
+    ]
+  },
+  {
+    "name": ":pity_andzie:",
+    "color": [
+      141,
+      130,
+      132
+    ]
+  },
+  {
+    "name": ":pity_anko:",
+    "color": [
+      190,
+      186,
+      184
+    ]
+  },
+  {
+    "name": ":pity_ankokuudaisyogun:",
+    "color": [
+      112,
+      98,
+      96
+    ]
+  },
+  {
+    "name": ":pity_aoi:",
+    "color": [
+      155,
+      171,
+      182
+    ]
+  },
+  {
+    "name": ":pity_arma:",
+    "color": [
+      169,
+      112,
+      122
+    ]
+  },
+  {
+    "name": ":pity_awamo:",
+    "color": [
+      130,
+      119,
+      147
+    ]
+  },
+  {
+    "name": ":pity_chibishikiji:",
+    "color": [
+      168,
+      181,
+      193
+    ]
+  },
+  {
+    "name": ":pity_chifuyu:",
+    "color": [
+      136,
+      131,
+      128
+    ]
+  },
+  {
+    "name": ":pity_chifuyu_nomegane:",
+    "color": [
+      141,
+      135,
+      132
+    ]
+  },
+  {
+    "name": ":pity_chisa:",
+    "color": [
+      188,
+      177,
+      165
+    ]
+  },
+  {
+    "name": ":pity_coko:",
+    "color": [
+      184,
+      188,
+      193
+    ]
+  },
+  {
+    "name": ":pity_croix:",
+    "color": [
+      166,
+      160,
+      158
+    ]
+  },
+  {
+    "name": ":pity_defoko:",
+    "color": [
+      169,
+      153,
+      165
+    ]
+  },
+  {
+    "name": ":pity_dia:",
+    "color": [
+      170,
+      165,
+      183
+    ]
+  },
+  {
+    "name": ":pity_dot_tohokukirintan:",
+    "color": [
+      108,
+      100,
+      90
+    ]
+  },
+  {
+    "name": ":pity_drdareka:",
+    "color": [
+      190,
+      185,
+      185
+    ]
+  },
+  {
+    "name": ":pity_fee:",
+    "color": [
+      205,
+      168,
+      187
+    ]
+  },
+  {
+    "name": ":pity_frimomen:",
+    "color": [
+      119,
+      147,
+      152
+    ]
+  },
+  {
+    "name": ":pity_frimomen2:",
+    "color": [
+      147,
+      132,
+      125
+    ]
+  },
+  {
+    "name": ":pity_frimotan:",
+    "color": [
+      190,
+      163,
+      163
+    ]
+  },
+  {
+    "name": ":pity_galaco:",
+    "color": [
+      194,
+      173,
+      150
+    ]
+  },
+  {
+    "name": ":pity_gekiyaku:",
+    "color": [
+      180,
+      176,
+      174
+    ]
+  },
+  {
+    "name": ":pity_goki:",
+    "color": [
+      143,
+      151,
+      176
+    ]
+  },
+  {
+    "name": ":pity_goki_nui:",
+    "color": [
+      115,
+      155,
+      187
+    ]
+  },
+  {
+    "name": ":pity_gumi_v6:",
+    "color": [
+      159,
+      166,
+      143
+    ]
+  },
+  {
+    "name": ":pity_hanamaru:",
+    "color": [
+      177,
+      170,
+      159
+    ]
+  },
+  {
+    "name": ":pity_haru:",
+    "color": [
+      162,
+      164,
+      164
+    ]
+  },
+  {
+    "name": ":pity_hasukinemu:",
+    "color": [
+      197,
+      186,
+      183
+    ]
+  },
+  {
+    "name": ":pity_hau:",
+    "color": [
+      132,
+      175,
+      182
+    ]
+  },
+  {
+    "name": ":pity_himari:",
+    "color": [
+      156,
+      150,
+      143
+    ]
+  },
+  {
+    "name": ":pity_hime:",
+    "color": [
+      155,
+      131,
+      134
+    ]
+  },
+  {
+    "name": ":pity_hinagikulumi:",
+    "color": [
+      161,
+      177,
+      190
+    ]
+  },
+  {
+    "name": ":pity_holyknight:",
+    "color": [
+      123,
+      115,
+      115
+    ]
+  },
+  {
+    "name": ":pity_ia:",
+    "color": [
+      205,
+      198,
+      191
+    ]
+  },
+  {
+    "name": ":pity_iltan:",
+    "color": [
+      168,
+      141,
+      131
+    ]
+  },
+  {
+    "name": ":pity_itako:",
+    "color": [
+      205,
+      192,
+      186
+    ]
+  },
+  {
+    "name": ":pity_joko:",
+    "color": [
+      180,
+      177,
+      176
+    ]
+  },
+  {
+    "name": ":pity_kafu:",
+    "color": [
+      201,
+      198,
+      190
+    ]
+  },
+  {
+    "name": ":pity_kaito:",
+    "color": [
+      129,
+      135,
+      157
+    ]
+  },
+  {
+    "name": ":pity_kakyoyosari:",
+    "color": [
+      149,
+      163,
+      166
+    ]
+  },
+  {
+    "name": ":pity_kanata:",
+    "color": [
+      189,
+      186,
+      186
+    ]
+  },
+  {
+    "name": ":pity_karin:",
+    "color": [
+      156,
+      131,
+      132
+    ]
+  },
+  {
+    "name": ":pity_kazehiki:",
+    "color": [
+      193,
+      185,
+      179
+    ]
+  },
+  {
+    "name": ":pity_kedamaki:",
+    "color": [
+      212,
+      186,
+      137
+    ]
+  },
+  {
+    "name": ":pity_kinakomon:",
+    "color": [
+      196,
+      178,
+      156
+    ]
+  },
+  {
+    "name": ":pity_kiritan:",
+    "color": [
+      164,
+      134,
+      129
+    ]
+  },
+  {
+    "name": ":pity_kiyoteru:",
+    "color": [
+      143,
+      134,
+      124
+    ]
+  },
+  {
+    "name": ":pity_kohaku:",
+    "color": [
+      201,
+      188,
+      181
+    ]
+  },
+  {
+    "name": ":pity_kominato:",
+    "color": [
+      123,
+      126,
+      133
+    ]
+  },
+  {
+    "name": ":pity_kotarou:",
+    "color": [
+      179,
+      167,
+      154
+    ]
+  },
+  {
+    "name": ":pity_kotone:",
+    "color": [
+      181,
+      178,
+      164
+    ]
+  },
+  {
+    "name": ":pity_kotone_tubomi:",
+    "color": [
+      178,
+      175,
+      171
+    ]
+  },
+  {
+    "name": ":pity_kotonohasimainokiiroihou:",
+    "color": [
+      197,
+      187,
+      166
+    ]
+  },
+  {
+    "name": ":pity_kou_voicepeak:",
+    "color": [
+      180,
+      151,
+      99
+    ]
+  },
+  {
+    "name": ":pity_kyonko:",
+    "color": [
+      201,
+      180,
+      162
+    ]
+  },
+  {
+    "name": ":pity_larkpatch:",
+    "color": [
+      127,
+      151,
+      157
+    ]
+  },
+  {
+    "name": ":pity_len:",
+    "color": [
+      193,
+      185,
+      156
+    ]
+  },
+  {
+    "name": ":pity_leur:",
+    "color": [
+      184,
+      180,
+      168
+    ]
+  },
+  {
+    "name": ":pity_likea:",
+    "color": [
+      176,
+      171,
+      166
+    ]
+  },
+  {
+    "name": ":pity_lilin:",
+    "color": [
+      177,
+      160,
+      156
+    ]
+  },
+  {
+    "name": ":pity_lit:",
+    "color": [
+      185,
+      180,
+      190
+    ]
+  },
+  {
+    "name": ":pity_luka:",
+    "color": [
+      183,
+      171,
+      166
+    ]
+  },
+  {
+    "name": ":pity_maki:",
+    "color": [
+      177,
+      163,
+      116
+    ]
+  },
+  {
+    "name": ":pity_maron:",
+    "color": [
+      170,
+      153,
+      138
+    ]
+  },
+  {
+    "name": ":pity_maron_voicevox:",
+    "color": [
+      164,
+      148,
+      140
+    ]
+  },
+  {
+    "name": ":pity_matsukarisk:",
+    "color": [
+      155,
+      149,
+      142
+    ]
+  },
+  {
+    "name": ":pity_meiko:",
+    "color": [
+      167,
+      156,
+      139
+    ]
+  },
+  {
+    "name": ":pity_meron:",
+    "color": [
+      195,
+      144,
+      121
+    ]
+  },
+  {
+    "name": ":pity_mesuo:",
+    "color": [
+      165,
+      166,
+      167
+    ]
+  },
+  {
+    "name": ":pity_metan:",
+    "color": [
+      193,
+      169,
+      178
+    ]
+  },
+  {
+    "name": ":pity_mikoto:",
+    "color": [
+      136,
+      128,
+      140
+    ]
+  },
+  {
+    "name": ":pity_miku:",
+    "color": [
+      159,
+      178,
+      184
+    ]
+  },
+  {
+    "name": ":pity_millial:",
+    "color": [
+      123,
+      123,
+      123
+    ]
+  },
+  {
+    "name": ":pity_minato:",
+    "color": [
+      135,
+      145,
+      164
+    ]
+  },
+  {
+    "name": ":pity_minori:",
+    "color": [
+      197,
+      173,
+      167
+    ]
+  },
+  {
+    "name": ":pity_mitama:",
+    "color": [
+      173,
+      170,
+      169
+    ]
+  },
+  {
+    "name": ":pity_moca:",
+    "color": [
+      160,
+      158,
+      151
+    ]
+  },
+  {
+    "name": ":pity_mochiko:",
+    "color": [
+      168,
+      165,
+      159
+    ]
+  },
+  {
+    "name": ":pity_mochikou:",
+    "color": [
+      129,
+      129,
+      129
+    ]
+  },
+  {
+    "name": ":pity_mocochan:",
+    "color": [
+      170,
+      159,
+      156
+    ]
+  },
+  {
+    "name": ":pity_momonemomo:",
+    "color": [
+      182,
+      156,
+      148
+    ]
+  },
+  {
+    "name": ":pity_musekinin:",
+    "color": [
+      53,
+      49,
+      38
+    ]
+  },
+  {
+    "name": ":pity_myukari:",
+    "color": [
+      169,
+      142,
+      182
+    ]
+  },
+  {
+    "name": ":pity_nako:",
+    "color": [
+      188,
+      186,
+      187
+    ]
+  },
+  {
+    "name": ":pity_nana:",
+    "color": [
+      201,
+      176,
+      168
+    ]
+  },
+  {
+    "name": ":pity_nekotukab:",
+    "color": [
+      139,
+      175,
+      193
+    ]
+  },
+  {
+    "name": ":pity_nekotukar:",
+    "color": [
+      200,
+      141,
+      136
+    ]
+  },
+  {
+    "name": ":pity_nia:",
+    "color": [
+      106,
+      102,
+      106
+    ]
+  },
+  {
+    "name": ":pity_no7:",
+    "color": [
+      174,
+      173,
+      177
+    ]
+  },
+  {
+    "name": ":pity_oedochanko:",
+    "color": [
+      144,
+      168,
+      175
+    ]
+  },
+  {
+    "name": ":pity_one:",
+    "color": [
+      185,
+      175,
+      159
+    ]
+  },
+  {
+    "name": ":pity_otamanbou:",
+    "color": [
+      109,
+      95,
+      141
+    ]
+  },
+  {
+    "name": ":pity_oukamiko:",
+    "color": [
+      200,
+      184,
+      172
+    ]
+  },
+  {
+    "name": ":pity_oukamiko_daini:",
+    "color": [
+      188,
+      174,
+      160
+    ]
+  },
+  {
+    "name": ":pity_puniko:",
+    "color": [
+      201,
+      199,
+      198
+    ]
+  },
+  {
+    "name": ":pity_reco:",
+    "color": [
+      187,
+      186,
+      187
+    ]
+  },
+  {
+    "name": ":pity_rei:",
+    "color": [
+      190,
+      162,
+      141
+    ]
+  },
+  {
+    "name": ":pity_reml:",
+    "color": [
+      148,
+      139,
+      137
+    ]
+  },
+  {
+    "name": ":pity_rikka:",
+    "color": [
+      178,
+      175,
+      175
+    ]
+  },
+  {
+    "name": ":pity_rime:",
+    "color": [
+      190,
+      186,
+      179
+    ]
+  },
+  {
+    "name": ":pity_rin:",
+    "color": [
+      197,
+      188,
+      166
+    ]
+  },
+  {
+    "name": ":pity_rino:",
+    "color": [
+      205,
+      193,
+      154
+    ]
+  },
+  {
+    "name": ":pity_ririse:",
+    "color": [
+      171,
+      168,
+      163
+    ]
+  },
+  {
+    "name": ":pity_rito:",
+    "color": [
+      150,
+      143,
+      134
+    ]
+  },
+  {
+    "name": ":pity_ritsu:",
+    "color": [
+      187,
+      145,
+      128
+    ]
+  },
+  {
+    "name": ":pity_robomochiko:",
+    "color": [
+      172,
+      175,
+      182
+    ]
+  },
+  {
+    "name": ":pity_rosa:",
+    "color": [
+      205,
+      177,
+      184
+    ]
+  },
+  {
+    "name": ":pity_ryusei:",
+    "color": [
+      158,
+      152,
+      146
+    ]
+  },
+  {
+    "name": ":pity_sakuradamon:",
+    "color": [
+      208,
+      178,
+      184
+    ]
+  },
+  {
+    "name": ":pity_sasara:",
+    "color": [
+      167,
+      151,
+      139
+    ]
+  },
+  {
+    "name": ":pity_satoishi:",
+    "color": [
+      178,
+      143,
+      155
+    ]
+  },
+  {
+    "name": ":pity_sayo:",
+    "color": [
+      203,
+      190,
+      181
+    ]
+  },
+  {
+    "name": ":pity_seika:",
+    "color": [
+      141,
+      135,
+      131
+    ]
+  },
+  {
+    "name": ":pity_sekai:",
+    "color": [
+      170,
+      168,
+      166
+    ]
+  },
+  {
+    "name": ":pity_shinobi:",
+    "color": [
+      172,
+      128,
+      120
+    ]
+  },
+  {
+    "name": ":pity_shion:",
+    "color": [
+      182,
+      162,
+      197
+    ]
+  },
+  {
+    "name": ":pity_shoga:",
+    "color": [
+      185,
+      137,
+      132
+    ]
+  },
+  {
+    "name": ":pity_shuo:",
+    "color": [
+      181,
+      170,
+      160
+    ]
+  },
+  {
+    "name": ":pity_siro:",
+    "color": [
+      200,
+      201,
+      208
+    ]
+  },
+  {
+    "name": ":pity_sodamon:",
+    "color": [
+      156,
+      185,
+      203
+    ]
+  },
+  {
+    "name": ":pity_sora_haruno:",
+    "color": [
+      193,
+      173,
+      159
+    ]
+  },
+  {
+    "name": ":pity_sora_kyushu:",
+    "color": [
+      153,
+      143,
+      179
+    ]
+  },
+  {
+    "name": ":pity_souichi:",
+    "color": [
+      167,
+      157,
+      142
+    ]
+  },
+  {
+    "name": ":pity_sourin:",
+    "color": [
+      161,
+      143,
+      102
+    ]
+  },
+  {
+    "name": ":pity_spin_sayo:",
+    "color": [
+      157,
+      156,
+      160
+    ]
+  },
+  {
+    "name": ":pity_syachiko:",
+    "color": [
+      152,
+      139,
+      137
+    ]
+  },
+  {
+    "name": ":pity_takahashi:",
+    "color": [
+      170,
+      154,
+      144
+    ]
+  },
+  {
+    "name": ":pity_takehiro:",
+    "color": [
+      150,
+      145,
+      138
+    ]
+  },
+  {
+    "name": ":pity_tanakasan:",
+    "color": [
+      187,
+      176,
+      167
+    ]
+  },
+  {
+    "name": ":pity_teto:",
+    "color": [
+      169,
+      125,
+      124
+    ]
+  },
+  {
+    "name": ":pity_tobari:",
+    "color": [
+      123,
+      115,
+      122
+    ]
+  },
+  {
+    "name": ":pity_tobari_voicevox:",
+    "color": [
+      107,
+      105,
+      112
+    ]
+  },
+  {
+    "name": ":pity_tsudumi:",
+    "color": [
+      139,
+      138,
+      151
+    ]
+  },
+  {
+    "name": ":pity_tsuina:",
+    "color": [
+      162,
+      150,
+      146
+    ]
+  },
+  {
+    "name": ":pity_tsuina_nomen:",
+    "color": [
+      167,
+      162,
+      157
+    ]
+  },
+  {
+    "name": ":pity_tsukumo:",
+    "color": [
+      193,
+      187,
+      189
+    ]
+  },
+  {
+    "name": ":pity_tsukuyomichan:",
+    "color": [
+      193,
+      184,
+      184
+    ]
+  },
+  {
+    "name": ":pity_tsumugi:",
+    "color": [
+      189,
+      175,
+      155
+    ]
+  },
+  {
+    "name": ":pity_tsumugi_hyper:",
+    "color": [
+      165,
+      158,
+      153
+    ]
+  },
+  {
+    "name": ":pity_tsumugi2:",
+    "color": [
+      185,
+      168,
+      143
+    ]
+  },
+  {
+    "name": ":pity_tt:",
+    "color": [
+      182,
+      174,
+      157
+    ]
+  },
+  {
+    "name": ":pity_turugi:",
+    "color": [
+      159,
+      171,
+      133
+    ]
+  },
+  {
+    "name": ":pity_turugi2:",
+    "color": [
+      146,
+      140,
+      105
+    ]
+  },
+  {
+    "name": ":pity_uduki:",
+    "color": [
+      117,
+      112,
+      112
+    ]
+  },
+  {
+    "name": ":pity_ui:",
+    "color": [
+      200,
+      190,
+      195
+    ]
+  },
+  {
+    "name": ":pity_una:",
+    "color": [
+      164,
+      153,
+      173
+    ]
+  },
+  {
+    "name": ":pity_uncommon:",
+    "color": [
+      143,
+      96,
+      107
+    ]
+  },
+  {
+    "name": ":pity_uni:",
+    "color": [
+      197,
+      182,
+      164
+    ]
+  },
+  {
+    "name": ":pity_unoka_sizuku:",
+    "color": [
+      187,
+      181,
+      180
+    ]
+  },
+  {
+    "name": ":pity_urone:",
+    "color": [
+      148,
+      123,
+      117
+    ]
+  },
+  {
+    "name": ":pity_usagi:",
+    "color": [
+      97,
+      95,
+      96
+    ]
+  },
+  {
+    "name": ":pity_vflower:",
+    "color": [
+      164,
+      159,
+      160
+    ]
+  },
+  {
+    "name": ":pity_voidoll:",
+    "color": [
+      170,
+      185,
+      185
+    ]
+  },
+  {
+    "name": ":pity_whitecul:",
+    "color": [
+      187,
+      190,
+      190
+    ]
+  },
+  {
+    "name": ":pity_windcul:",
+    "color": [
+      164,
+      177,
+      184
+    ]
+  },
+  {
+    "name": ":pity_yukari:",
+    "color": [
+      195,
+      177,
+      192
+    ]
+  },
+  {
+    "name": ":pity_yukari_shizuku:",
+    "color": [
+      205,
+      188,
+      202
+    ]
+  },
+  {
+    "name": ":pity_yuki:",
+    "color": [
+      147,
+      143,
+      140
+    ]
+  },
+  {
+    "name": ":pity_yukimoti:",
+    "color": [
+      228,
+      231,
+      242
+    ]
+  },
+  {
+    "name": ":pity_yukineriu:",
+    "color": [
+      228,
+      218,
+      222
+    ]
+  },
+  {
+    "name": ":pity_yutaro:",
+    "color": [
+      126,
+      113,
+      124
+    ]
+  },
+  {
+    "name": ":pity_yuzuru:",
+    "color": [
+      198,
+      181,
+      166
+    ]
+  },
+  {
+    "name": ":pity_zonko:",
+    "color": [
+      176,
+      173,
+      173
+    ]
+  },
+  {
+    "name": ":pity_zundamon:",
+    "color": [
+      173,
+      192,
+      151
+    ]
+  },
+  {
+    "name": ":pity_zunko:",
+    "color": [
+      147,
+      154,
+      139
+    ]
+  }
+]
