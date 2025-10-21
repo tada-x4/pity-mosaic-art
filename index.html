@@ -7,18 +7,47 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="style.css">
 </head>
-<body class="p-4 text-center">
-<h1 class="text-2xl font-bold mb-2">🧩 Misskey絵文字モザイクメーカー</h1>
-<p class="text-gray-400 mb-3">画像をアップロード → Misskey投稿用モザイクを生成（自動で絵文字データ読込）</p>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="icon">🧩</div>
+    <h1>Misskey絵文字モザイクメーカー</h1>
+    <p class="subtitle">画像を絵文字アートに変換 • 3000文字制限対応</p>
+  </div>
 
-<input type="file" id="imgInput" accept="image/*" class="mb-3">
-<button id="generate" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded">生成</button>
+  <div class="card">
+    <div class="upload-area">
+      <input type="file" id="imgInput" accept="image/*">
+      <label for="imgInput" class="upload-label">
+        <svg class="upload-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+        </svg>
+        <span class="upload-text">画像を選択またはドロップ</span>
+        <span class="upload-subtext">PNG, JPG, GIF対応</span>
+      </label>
+    </div>
 
-<p id="status" class="my-3 text-gray-400"></p>
-<canvas id="canvas" class="my-3 max-w-full"></canvas>
-<div class="relative">
-  <textarea id="output" readonly></textarea>
-  <button id="copyBtn" class="absolute top-2 right-2 bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded text-sm" style="display:none;">コピー</button>
+    <button id="generate" class="generate-btn">
+      <span>✨ 生成する</span>
+    </button>
+
+    <div id="status" class="status"></div>
+    
+    <canvas id="canvas" class="preview-canvas"></canvas>
+    
+    <div class="output-container" id="outputContainer" style="display:none;">
+      <div class="output-header">
+        <span class="output-title">生成結果</span>
+        <button id="copyBtn" class="copy-btn">
+          <svg class="copy-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+          </svg>
+          <span id="copyBtnText">コピー</span>
+        </button>
+      </div>
+      <textarea id="output" readonly></textarea>
+    </div>
+  </div>
 </div>
 
 <script src="script.js"></script>

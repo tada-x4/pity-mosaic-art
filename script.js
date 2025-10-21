@@ -1,23 +1,69 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 const output = document.getElementById("output");
+const outputContainer = document.getElementById("outputContainer");
 const status = document.getElementById("status");
 const copyBtn = document.getElementById("copyBtn");
+const copyBtnText = document.getElementById("copyBtnText");
+const imgInput = document.getElementById("imgInput");
 const MAX_CHARS = 3000;
 let emojis = [];
+
+// ファイルドロップ対応
+const uploadLabel = document.querySelector(".upload-label");
+
+["dragenter", "dragover", "dragleave", "drop"].forEach(eventName => {
+  uploadLabel.addEventListener(eventName, preventDefaults, false);
+});
+
+function preventDefaults(e) {
+  e.preventDefault();
+  e.stopPropagation();
+}
+
+["dragenter", "dragover"].forEach(eventName => {
+  uploadLabel.addEventListener(eventName, () => {
+    uploadLabel.style.borderColor = "#667eea";
+    uploadLabel.style.background = "rgba(102, 126, 234, 0.15)";
+  }, false);
+});
+
+["dragleave", "drop"].forEach(eventName => {
+  uploadLabel.addEventListener(eventName, () => {
+    uploadLabel.style.borderColor = "rgba(102, 126, 234, 0.5)";
+    uploadLabel.style.background = "rgba(102, 126, 234, 0.05)";
+  }, false);
+});
+
+uploadLabel.addEventListener("drop", (e) => {
+  const dt = e.dataTransfer;
+  const files = dt.files;
+  if (files.length > 0) {
+    imgInput.files = files;
+    updateFileName();
+  }
+}, false);
+
+imgInput.addEventListener("change", updateFileName);
+
+function updateFileName() {
+  const fileName = imgInput.files[0]?.name;
+  if (fileName) {
+    document.querySelector(".upload-text").textContent = fileName;
+    document.querySelector(".upload-subtext").textContent = "✓ ファイルを選択しました";
+  }
+}
 
 // コピーボタンのイベントリスナー
 copyBtn.addEventListener("click", async () => {
   try {
     await navigator.clipboard.writeText(output.value);
-    const originalText = copyBtn.textContent;
-    copyBtn.textContent = "✓ コピーしました";
-    copyBtn.classList.remove("bg-green-600", "hover:bg-green-700");
-    copyBtn.classList.add("bg-blue-600");
+    copyBtnText.textContent = "コピーしました！";
+    copyBtn.classList.add("copied");
+    
     setTimeout(() => {
-      copyBtn.textContent = originalText;
-      copyBtn.classList.remove("bg-blue-600");
-      copyBtn.classList.add("bg-green-600", "hover:bg-green-700");
+      copyBtnText.textContent = "コピー";
+      copyBtn.classList.remove("copied");
     }, 2000);
   } catch (err) {
     alert("コピーに失敗しました");
@@ -26,13 +72,13 @@ copyBtn.addEventListener("click", async () => {
 
 // 絵文字データの読み込み
 async function loadEmojis() {
-  status.textContent = "絵文字データを読み込み中...";
+  status.textContent = "🔄 絵文字データを読み込み中...";
   try {
     const res = await fetch("emojis.json");
     emojis = await res.json();
     status.textContent = `✅ 絵文字データ ${emojis.length}件 読み込み完了`;
   } catch (e) {
-    status.textContent = "❌ emojis.json が見つかりません。配置を確認してください。";
+    status.textContent = "❌ emojis.json が見つかりません";
   }
 }
 
@@ -72,17 +118,17 @@ function calculateOptimalSize(imgWidth, imgHeight) {
 
 // 生成ボタンのイベントリスナー
 document.getElementById("generate").addEventListener("click", async () => {
-  const imgFile = document.getElementById("imgInput").files[0];
+  const imgFile = imgInput.files[0];
   if (!imgFile) {
-    alert("画像を選択してください。");
+    alert("画像を選択してください");
     return;
   }
   if (emojis.length === 0) {
-    alert("絵文字データが読み込まれていません。emojis.jsonを配置してください。");
+    alert("絵文字データが読み込まれていません");
     return;
   }
 
-  status.textContent = "画像読み込み中...";
+  status.textContent = "🖼️ 画像を読み込み中...";
   const img = await new Promise(res => {
     const i = new Image();
     i.onload = () => res(i);
@@ -92,11 +138,12 @@ document.getElementById("generate").addEventListener("click", async () => {
   // 3000文字ギリギリになるよう自動計算
   const { cols, rows, estimatedChars } = calculateOptimalSize(img.width, img.height);
 
-  status.textContent = `生成中... (${cols}×${rows} 推定文字数: ~${estimatedChars})`;
+  status.textContent = `⚙️ 生成中... (${cols}×${rows} 推定: ~${estimatedChars}文字)`;
   
   // キャンバスに描画
   canvas.width = cols;
   canvas.height = rows;
+  canvas.style.display = "block";
   ctx.drawImage(img, 0, 0, cols, rows);
   const data = ctx.getImageData(0, 0, cols, rows).data;
 
@@ -122,29 +169,15 @@ document.getElementById("generate").addEventListener("click", async () => {
     text += "\n";
   }
 
-  // 文字数制限チェック
-  if (text.length > MAX_CHARS) {
-    const lines = text.split("\n");
-    let truncated = "";
-    for (let line of lines) {
-      if (truncated.length + line.length + 1 <= MAX_CHARS - 20) {
-        truncated += line + "\n";
-      } else {
-        break;
-      }
-    }
-    text = truncated + "...（3000文字制限のため省略）";
-  }
-
   output.value = text;
-  copyBtn.style.display = "block";
+  outputContainer.style.display = "block";
   status.textContent = `✅ 完了！ 出力文字数: ${text.length} / 3000`;
   
   // 文字数が制限を超えている場合は警告
   if (text.length > MAX_CHARS) {
     status.textContent += " ⚠️ 制限を超えました";
   } else if (text.length > MAX_CHARS - 200) {
-    status.textContent += " （ギリギリです）";
+    status.textContent += " 🎯";
   }
 });
 
